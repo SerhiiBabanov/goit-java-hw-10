@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b81f6c60-87db-4c49-b39c-6dac40d19ee6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/PhoneNumbersReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/PhoneNumbersReaderTest.java" afterDir="false" />
+    <list default="true" id="b81f6c60-87db-4c49-b39c-6dac40d19ee6" name="Changes" comment="create PhoneNumbersReader and PhoneNumbersReaderTest">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PhoneNumbersReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PhoneNumbersReaderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +90,14 @@
       <option name="presentableId" value="Default" />
       <updated>1653247103232</updated>
     </task>
+    <task id="LOCAL-00001" summary="create PhoneNumbersReader and PhoneNumbersReaderTest">
+      <created>1653251281513</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1653251281514</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -107,6 +110,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="create PhoneNumbersReader and PhoneNumbersReaderTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="create PhoneNumbersReader and PhoneNumbersReaderTest" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

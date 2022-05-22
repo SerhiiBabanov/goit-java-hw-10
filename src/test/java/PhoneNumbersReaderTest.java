@@ -27,5 +27,7 @@ class PhoneNumbersReaderTest {
         testReader.read("file.txt");
         assertTrue(outputStream.toString().trim().equals("987-123-4567\n" +
                                                   "(123) 456-7890"));
+
+        System.setOut(consoleStream);
     }
 }
