@@ -1,20 +1,13 @@
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
 
 public class PhoneNumbersReader {
     public void read(String fileName){
-        File file = new File(fileName);
-        try (FileInputStream fileInputStream = new FileInputStream(file);
-                BufferedReader reader = new BufferedReader(new InputStreamReader(fileInputStream))) {
-            String s;
-            while ((s = reader.readLine()) != null)   {
-                if (s.matches("(.*)\\(?\\d{3}\\)?[\\s-]\\d{3}-\\d{4}(.*)"))
-                {
-                    System.out.print(s + "\n");
-                }
-            }
-
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
+        try {
+            String reg = "(.*)\\(?\\d{3}\\)?[\\s-]\\d{3}-\\d{4}(.*)";
+            Files.lines(Paths.get(fileName)).filter(s -> s.matches(reg)).forEach(s -> System.out.print(s + "\n"));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
