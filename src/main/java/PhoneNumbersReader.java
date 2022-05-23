@@ -9,7 +9,7 @@ public class PhoneNumbersReader {
             String reg = "(.*)\\(?\\d{3}\\)?[\\s-]\\d{3}-\\d{4}(.*)";
             Files.lines(Paths.get(fileName)).filter(s -> s.matches(reg)).forEach(s -> System.out.print(s + "\n"));
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            System.err.println(e.getMessage());
         }
     }
 }
