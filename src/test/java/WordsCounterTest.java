@@ -7,6 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class WordsCounterTest {
     private WordsCounter wordsCounter;
+
     @BeforeEach
     void setUp() {
         wordsCounter = new WordsCounter();
@@ -22,6 +23,17 @@ class WordsCounterTest {
 
     @Test
     void countWordsInFile() {
+
+        PrintStream consoleStream = System.out;
+        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+        PrintStream stream = new PrintStream(outputStream);
+        System.setOut(stream);
         wordsCounter.countWordsInFile("fileWords.txt");
+        assertTrue(outputStream.toString().trim().equals("the 4\n" +
+                "is 3\n" +
+                "sunny 2\n" +
+                "day 1"));
+
+        System.setOut(consoleStream);
     }
 }
